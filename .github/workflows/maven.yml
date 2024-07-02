@@ -9,6 +9,11 @@
 name: Java CI with Maven
 
 on:
+ workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'suite name'     
+        required: true
   push:
     branches: [ "main" ]
   pull_request:
