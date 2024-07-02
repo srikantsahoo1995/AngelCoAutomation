@@ -9,10 +9,6 @@
 name: Java CI with Maven
 
 on:
-    inputs:
-      logLevel:
-        description: 'suite name'     
-        required: true
   push:
     branches: [ "main" ]
   pull_request:
