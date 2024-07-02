@@ -9,9 +9,6 @@
 name: Java CI with Maven
 
 on:
-  # Triggers the workflow every 1 minute
-  schedule:
-    - cron: "* * * * *"
   push:
     branches: [ "main" ]
   pull_request:
