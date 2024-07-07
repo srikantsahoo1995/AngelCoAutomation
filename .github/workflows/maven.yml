@@ -29,9 +29,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: naukri auth
-      run: curl --location 'https://www.naukri.com/central-login-services/v1/login' --header 'accept: application/json' --header 'appid: 103' --header 'clientid: d3skt0p' --header 'content-type: application/json' --header 'systemid: jobseeker' --data-raw '{"username":"srikantsahoo1995@gmail.com","password":"8338886625"}'
-
+    
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
